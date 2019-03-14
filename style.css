@@ -1,0 +1,24 @@
+.guidedLogStep{
+	background-color: #2C3E50;
+	color: white;
+	border-radius: 25px;
+	box-shadow: 5px 5px 4px #888888;
+	margin-top: 35px;
+	margin-bottom: 20px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	transition: all .25s ease-in-out;
+}
+
+.guidedLogStep:hover { transform: scale(1.05); }
+
+.imageUpdate{
+	background-color: white;
+	border-radius: 25px;
+	height: 500px;
+	width: auto;
+}
