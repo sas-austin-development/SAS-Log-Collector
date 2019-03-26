@@ -22,3 +22,17 @@
 	height: 500px;
 	width: auto;
 }
+
+.sdwLogAssistance{
+	margin: 0 auto;
+    width: 500px;
+    color: black;
+}
+
+.card{
+	margin-top: 50px;
+    margin-bottom: 50px;
+    transition: all .25s ease-in-out;
+}
+
+.card:hover { transform: scale(1.025); }
