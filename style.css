@@ -16,6 +16,23 @@
 
 .guidedLogStep:hover { transform: scale(1.05); }
 
+.generatedMessage{
+	background-color:  #2C3E50;
+	border-radius: 25px;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: all .5s ease-in-out;
+}
+
+.generatedMessage:hover{
+	background-color:  white;
+	border-radius: 25px;
+	color: black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 .imageUpdate{
 	background-color: white;
 	border-radius: 25px;
@@ -28,10 +45,18 @@
     width: 1000px;
     color: black;
 }
+
+
 .card{
 	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 4px #888888;
     margin-bottom: 50px;
     transition: all .25s ease-in-out;
+    background-color:  #2C3E50;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .card:hover { transform: scale(1.025); }
 
@@ -39,10 +64,10 @@
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: blue;
+	background-color:  #2C3E50;
 	color: white;
 }
 
-.form-group{
-	color: black;
+.form-group-1{
+	color: white;
 }
