@@ -52,10 +52,10 @@
 }
 
 .card{
-	margin-top: 50px;
+	margin-top: 40px;
 	border-radius: 10px;
 	box-shadow: 5px 5px 4px #888888;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     transition: all .25s ease-in-out;
     background-color:  #2C3E50;
     color: white;
@@ -63,6 +63,18 @@
     padding-left: 10px;
 }
 .card:hover { transform: scale(1.025); }
+
+.card-1{
+	margin-top: 0px;
+}
+
+.card-9{
+	text-align: center;
+}
+
+.inputFile{
+	margin-left: 420px;
+}
 
 .card-title{
 	text-align: center;
@@ -75,9 +87,6 @@
 .form-group-1{
 	color: white;
 }
-
-
-
 
 
 /******* ADDING ARROW ANIMATION ********/

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -29,7 +28,9 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
+<!--  ------------------------------------- -->
+<!--  ----------- Navigation Bar  --------- -->
+<!--  ------------------------------------- -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">SAS Log Collector</a>
@@ -53,7 +54,9 @@
     </div>
   </nav>
 
-  <!-- Header -->
+<!--  ----------------------------- -->
+<!--  ----------- Header  --------- -->
+<!--  ----------------------------- -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
       <img class="img-fluid mb-5 d-block mx-auto imageUpdate" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/40116259_10213352841997914_5750059777312948224_n.jpg?_nc_cat=106&_nc_oc=AQmTvHkM3P5TF6VqHNH9rij3Ikp7eEpM5tOUhzi-v457Z0WQ923Y1yM1f4tQEzU_fTg&_nc_ht=scontent-dfw5-2.xx&oh=ed937f562d5b2f16b7aa80077f711de1&oe=5D0959FA" alt="">
@@ -63,7 +66,9 @@
     </div>
   </header>
 
-  <!-- Two Method Description -->
+<!--  ---------------------------------------------- -->
+<!--  ----------- Two Method Descriptions  --------- -->
+<!--  ---------------------------------------------- -->
   <section class="portfolio" id="portfolio">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">How to send us your Logs</h2>
@@ -82,7 +87,10 @@
       </div>
     </div>
   </section>
-
+  
+<!--  ------------------------------------------------------------- -->
+<!--  ----------- Collect Information for Log Assistance ---------- -->
+<!--  ------------------------------------------------------------- -->
   <!-- Guided Log Collection Section -->
   <section class="bg-primary text-white mb-0" id="about">
     <div class="container">
@@ -157,7 +165,7 @@
             <div class="col-sm-2"><strong>Requested Logs</strong></div>
             <div class="col-sm-10">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
                 <label class="form-check-label" for="gridCheck1">
                   SAS Deployment Wizard Logs
                 </label>
@@ -194,25 +202,27 @@
         <div class='guidedLogStep'>
           <h4 class='text-center'> Step 5: Please Submit </h4>
           <div class="text-center">
-              <button type="submit" class="btn btn-lg btn-primary">Generate Log Assistance</button>
+              <button type="submit" class="btn btn-lg btn-primary" onclick="generateAssistance()">Generate Log Assistance</button>
           </div>
         </div>
      </form>
     <hr class="star-light mb-5">
 
 
-<!--  ----------- Log Collector Assistance -------- -->
-<!--  ----------- SDW Assistance -------- -->
-  <h4 class='text-center generatedMessage'> Please follow the Below Steps to Submit (Selected) Logs</h4>
+
+<!--  ------------------------------------------------ -->
+<!--  ----------- Log Collector Assistance  ---------- -->
+<!--  ------------------------------------------------ -->
+  <h4 class='text-center generatedMessage'> Please follow the Below Steps to Submit Deployment Logs</h4>
     <!--  ----------- Add Animated Arrow -------- -->
     <div class="downArrow bounce">
-      <img class = "arrowClass" width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+      <img class = "arrowClass" width="40" height="40" alt="" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/htc/37/downwards-black-arrow_2b07.png" />
     </div>
-
   <div class='logColectorAssistance'>
     <div class = 'sdwLogAssistance'>
+
       <!-- Step 1 C Drive -->
-      <div class="card"  id="step1">
+      <div class="card card-1"  id="step1">
         <h5 class="card-title">Step 1: Go to your C Drive</h5>
           <img src="./img/sdwWalkthrough/step1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -220,8 +230,11 @@
             <a href="#step2"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
+
         <!-- Step 2 Click on User Folder -->
-      <div class="card" id="step2" >
+         <div id=step2> </div>
+    <br>
+      <div class="card" >
           <h5 class="card-title">Step 2: Double Click on Users Folder</h5>
           <img src="./img/sdwWalkthrough/step2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -229,8 +242,11 @@
             <a href="#step3"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
+
          <!-- Step 3 Click on Correct User -->
-      <div class="card"  id="step3">
+          <div id=step3> </div>
+    <br>
+      <div class="card"  >
           <h5 class="card-title">Step 3: Double Click on UserID who Installed SAS</h5>
           <img src="./img/sdwWalkthrough/step3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -238,8 +254,11 @@
             <a href="#step4"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
+
          <!-- Step 4 Click on App Data Folder -->
-      <div class="card"  id="step4">
+          <div id=step4> </div>
+    <br>
+      <div class="card" >
           <h5 class="card-title">Step 4: Double Click on AppData</h5>
           <img src="./img/sdwWalkthrough/step4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -247,8 +266,11 @@
             <a href="#step5"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
+
          <!-- Step 5 Click on Local -->
-      <div class="card"  id="step5">
+          <div id=step5> </div>
+    <br>
+      <div class="card">
           <h5 class="card-title">Step 5: Double Click on Local</h5>
           <img src="./img/sdwWalkthrough/step5.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -256,8 +278,11 @@
             <a href="#step6"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
+
          <!-- Step 6 Click on SAS Folder -->
-      <div class="card"  id="step6">
+          <div id=step6> </div>
+    <br>
+      <div class="card" >
           <h5 class="card-title">Step 6: Double click on SAS</h5>
           <img src="./img/sdwWalkthrough/step6.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -265,8 +290,11 @@
             <a href="#step7"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
+
          <!-- Step 7 Right Click on SASDeployment Wizard -> Send to -> Extracted Folder -->
-      <div class="card"  id="step7">
+        <div id=step7> </div>
+      <br>
+      <div class="card">
           <h5 class="card-title">Step 7: Right Click on SAS Deployment Wizard</h5>
           <img src="./img/sdwWalkthrough/step7.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -274,8 +302,11 @@
             <a href="#step8"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
+
          <!-- Step 8 You have the log files now for sdw! -->
-      <div class="card"  id="step8">
+    <div id=step8> </div>
+    <br>
+      <div class="card">
           <h5 class="card-title">Step 8 - Verify the Zip File was Created</h5>
           <img src="./img/sdwWalkthrough/step8.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -286,25 +317,40 @@
     </div>
   </div>
 
-    <!-- Choose File Button to Submit Logs-->
-    <div class="card"  id="step9">
-          <h5 class="card-title">Step 9 -Submit the Zipped File</h5>
+    <!-- Step 9 - Choose File Button to Submit Logs-->
+    <div id=step9> </div>
+    <br>
+    <div class="card card-9">
+          <h5 class="card-title">Step 9 - Select the Zipped File</h5>
           <div class="card-body">
             <form >
               <div class="form-group form-group-1">
-                <label for="exampleFormControlFile1">Choose your SAS Deployment Wizard Extracted Folder</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <label for="exampleFormControlFile1"><em>Choose your SAS Deployment Wizard Extracted Folder:</em></label>
+                <input type="file" class="form-control-file inputFile" id="">
               </div>
            </form>
+           <a href="#step10"> <button type="button" class="btn btn-outline-light">Next</button> </a>
         </div>
+ </div>
+ <!-- Step 10 Submit Logs -->
+      <div id=step10> </div>
+    <br>
+      <div class="card">
+          <h5 class="card-title">Step 10 - Submit the Zipped File </h5>
+          <div class="card-body">
+              <div class="text-center">
+                <button type="submit" class="btn btn-lg btn-primary" onclick="generateAssistance()">Submit Logs</button>
+              </div>
+          </div>
       </div>
-    </div>
-  </div>
-       
-  </div>  <!-- End of Container -->
-</section> 
 
+
+</div> <!-- End of Bootstrap Container -->
+</section> <!-- End of Bootstrap Section -->
+
+<!--  ------------------------------------------- -->
 <!--  ----------- Log Collector Download -------- -->
+<!--  ------------------------------------------- -->
   <!-- Download Section -->
   <section id="contact">
     <div class="container">
