@@ -25,14 +25,24 @@
 
 .sdwLogAssistance{
 	margin: 0 auto;
-    width: 500px;
+    width: 1000px;
     color: black;
 }
-
 .card{
 	margin-top: 50px;
     margin-bottom: 50px;
     transition: all .25s ease-in-out;
 }
-
 .card:hover { transform: scale(1.025); }
+
+.card-title{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: blue;
+	color: white;
+}
+
+.form-group{
+	color: black;
+}
