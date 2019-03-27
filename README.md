@@ -1,6 +1,6 @@
 # [SAS Log Collector](https://sas-austin-development.github.io/SAS-Log-Collector/)
 
-[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
+[SAS Log Collector](https://github.com/KrisStobbe/SAS-Log-Collector) is a one page dynamic web application for customers needing to quickly upload different sets of logs. This application is created by Kristoffer Stobbe and Diego Hernandez.
 
 ## Status
 
@@ -12,8 +12,9 @@
 
 
 ## Bugs and Issues
+There are currently no reported bugs or issues.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
+Have a bug or an issue with this application? [Open a new issue](https://github.com/sas-austin-development/SAS-Log-Collector/issues/new) here on GitHub and we will review it promptly.
 
 
 ## Copyright and License
