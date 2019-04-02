@@ -88,6 +88,20 @@
     </div>
   </section>
   
+
+<!--  ------------------------------------------------------------- -->
+<!--  ----------- Button Generate JS Text Test ---------- -->
+<!--  ------------------------------------------------------------- -->
+ <!--    <div>
+              <input type="text" id="testId" placeholder="test">
+              <button class="btn btn-lg btn-primary" id="generateLogAssistance" >Generate Log Assistance</button>
+                <ul id = "itemList">
+                  <li> Jello </li>
+                </ul>
+    </div> -->
+
+
+
 <!--  ------------------------------------------------------------- -->
 <!--  ----------- Collect Information for Log Assistance ---------- -->
 <!--  ------------------------------------------------------------- -->
@@ -202,12 +216,15 @@
         <div class='guidedLogStep'>
           <h4 class='text-center'> Step 5: Please Submit </h4>
           <div class="text-center">
-              <button type="submit" class="btn btn-lg btn-primary" onclick="generateAssistance()">Generate Log Assistance</button>
+              <input type="text" id="testId" placeholder="test">
+              <button class="btn btn-lg btn-primary" id="generateLogAssistance" >Generate Log Assistance</button>
+                <ul id="itemList">
+                  <li> Jello </li>
+                </ul>
           </div>
         </div>
      </form>
     <hr class="star-light mb-5">
-
 
 
 <!--  ------------------------------------------------ -->
@@ -339,7 +356,7 @@
           <h5 class="card-title">Step 10 - Submit the Zipped File </h5>
           <div class="card-body">
               <div class="text-center">
-                <button type="submit" class="btn btn-lg btn-primary" onclick="generateAssistance()">Submit Logs</button>
+                <button type="submit" class="btn btn-lg btn-primary">Submit Logs</button>
               </div>
           </div>
       </div>
@@ -360,7 +377,7 @@
         <div class="col-lg-8 mx-auto">
         <div class="text-center mt-4">
         <!-- Download Button | Currently Disabled until Powershell Script is Built -->
-        <a class="btn btn-xl btn-outline-light" style="color: blue;" href="#" disabled>
+        <a class="btn btn-xl btn-outline-light" style="color: blue;" href="#">
           <i class="fas fa-download mr-2"></i>
           Download Now!
         </a>
@@ -432,6 +449,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <!-- Generate Guidance Script -->
+  <script type="text/javascript" src="js/generateAssistance.js"></script>
 
 </body>
 
