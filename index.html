@@ -112,29 +112,29 @@
       <hr class="star-light mb-5">
       <form>
 
-      <!-- Step 1: Enter Email and Tracking Number -->
+      <!-- Step 1: Enter Email  -->
          <div class='guidedLogStep'>
         <h4 class='text-center'> Step 1: Enter your Email</h4>
         <div class="form-group row">
           <label for="inputEmail3" class="col-sm-2 col-form-label"><strong>Email</strong></label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
           </div>
         </div>
       </div>
 
-           <!-- Step 1: Enter Email and Tracking Number -->
+           <!-- Step 2:  Tracking Number -->
          <div class='guidedLogStep'>
         <h4 class='text-center'> Step 2: Enter your Tracking Number </h4>
         <div class="form-group row">
           <label for="inputPassword3" class="col-sm-2 col-form-label"><strong>Tracking Number</strong></label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Tracking Number" required>
+            <input type="text" class="form-control" placeholder="Tracking Number" id="inputTrackingNumber" required>
           </div>
         </div>
       </div>
 
-         <!-- OS Selection Screen -->
+         <!-- Step 3: OS Selection Screen -->
           <div class='guidedLogStep'>
          <h4 class='text-center'> Step 3: Please choose your Operating System </h4>
          <div class = 'guidedLogCollection'>
@@ -172,7 +172,7 @@
         </div>
       </div>
 
-        <!-- Step 3 Choose Requested Logs -->
+        <!-- Step 4:  Choose Requested Logs -->
         <div class='guidedLogStep'>
         <h4 class='text-center'> Step 4: Please choose the Requested Logs </h4>
         <div class="form-group row">
@@ -212,7 +212,7 @@
            </div>
           </div>
 
-          <!-- Step 4 Submit -->
+        <!-- Step 5:  Submit | Uses generateAssistance.js -->
         <div class='guidedLogStep'>
           <h4 class='text-center'> Step 5: Please Submit </h4>
           <div class="text-center">
@@ -230,14 +230,16 @@
 <!--  ------------------------------------------------ -->
 <!--  ----------- Log Collector Assistance  ---------- -->
 <!--  ------------------------------------------------ -->
+  <div id="testsdwcheck">
   <h4 class='text-center generatedMessage'> Please follow the Below Steps to Submit Deployment Logs</h4>
     <!--  ----------- Add Animated Arrow -------- -->
     <div class="downArrow bounce">
       <img class = "arrowClass" width="40" height="40" alt="" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/htc/37/downwards-black-arrow_2b07.png" />
     </div>
-  <div class='logColectorAssistance'>
-    <div class = 'sdwLogAssistance'>
+  </div>
 
+  <div id = "logColectorAssistance">
+    <div class = 'sdwLogAssistance'>
       <!-- Step 1 C Drive -->
       <div class="card card-1"  id="step1">
         <h5 class="card-title">Step 1: Go to your C Drive</h5>
@@ -332,7 +334,6 @@
           </div>
       </div>
     </div>
-  </div>
 
     <!-- Step 9 - Choose File Button to Submit Logs-->
     <div id=step9> </div>
@@ -347,8 +348,9 @@
               </div>
            </form>
            <a href="#step10"> <button type="button" class="btn btn-outline-light">Next</button> </a>
-        </div>
- </div>
+      </div>
+    </div>
+
  <!-- Step 10 Submit Logs -->
       <div id=step10> </div>
     <br>
