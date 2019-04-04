@@ -59,7 +59,7 @@
 <!--  ----------------------------- -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto imageUpdate" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/40116259_10213352841997914_5750059777312948224_n.jpg?_nc_cat=106&_nc_oc=AQmTvHkM3P5TF6VqHNH9rij3Ikp7eEpM5tOUhzi-v457Z0WQ923Y1yM1f4tQEzU_fTg&_nc_ht=scontent-dfw5-2.xx&oh=ed937f562d5b2f16b7aa80077f711de1&oe=5D0959FA" alt="">
+      <img class="img-fluid mb-5 d-block mx-auto imageUpdate" src="" alt="">
       <h1 class="text-uppercase mb-0">SAS Log Collector</h1>
       <hr class="star-light">
       <h2 class="font-weight-light mb-0">Streamlined Web Guidance - Smart Scripts - Fast Resolution</h2>
@@ -87,20 +87,6 @@
       </div>
     </div>
   </section>
-  
-
-<!--  ------------------------------------------------------------- -->
-<!--  ----------- Button Generate JS Text Test ---------- -->
-<!--  ------------------------------------------------------------- -->
- <!--    <div>
-              <input type="text" id="testId" placeholder="test">
-              <button class="btn btn-lg btn-primary" id="generateLogAssistance" >Generate Log Assistance</button>
-                <ul id = "itemList">
-                  <li> Jello </li>
-                </ul>
-    </div> -->
-
-
 
 <!--  ------------------------------------------------------------- -->
 <!--  ----------- Collect Information for Log Assistance ---------- -->
@@ -110,15 +96,15 @@
     <div class="container">
       <h2 class="text-center text-uppercase text-white">Guided Log Collection</h2>
       <hr class="star-light mb-5">
+      
       <form>
-
       <!-- Step 1: Enter Email  -->
          <div class='guidedLogStep'>
         <h4 class='text-center'> Step 1: Enter your Email</h4>
         <div class="form-group row">
           <label for="inputEmail3" class="col-sm-2 col-form-label"><strong>Email</strong></label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" value="test@test.com">
           </div>
         </div>
       </div>
@@ -129,7 +115,7 @@
         <div class="form-group row">
           <label for="inputPassword3" class="col-sm-2 col-form-label"><strong>Tracking Number</strong></label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Tracking Number" id="inputTrackingNumber" required>
+            <input type="text" class="form-control" placeholder="Tracking Number" id="inputTrackingNumber" value="12345678">
           </div>
         </div>
       </div>
@@ -216,15 +202,11 @@
         <div class='guidedLogStep'>
           <h4 class='text-center'> Step 5: Please Submit </h4>
           <div class="text-center">
-              <input type="text" id="testId" placeholder="test">
-              <button class="btn btn-lg btn-primary" id="generateLogAssistance" >Generate Log Assistance</button>
-                <ul id="itemList">
-                  <li> Jello </li>
-                </ul>
+               <button class="btn btn-lg btn-primary" id="generateLogAssistance" ><a href="#scrollId" class="generateAssistanceButton">Generate Log Assistance</a></button>
           </div>
         </div>
      </form>
-    <hr class="star-light mb-5">
+    <hr class="star-light mb-5" id = "scrollId">
 
 
 <!--  ------------------------------------------------ -->
@@ -245,7 +227,11 @@
         <h5 class="card-title">Step 1: Go to your C Drive</h5>
           <img src="./img/sdwWalkthrough/step1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text"><u>Please open up your C Drive. This can be done a few ways:</u></p>
+            <ol> 
+              <li> Open your File Explorer, and go to the location shown in the image above
+              <li> In your search bar, search "C:"
+            </ol>
             <a href="#step2"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
@@ -257,7 +243,7 @@
           <h5 class="card-title">Step 2: Double Click on Users Folder</h5>
           <img src="./img/sdwWalkthrough/step2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">While in your C: Drive, double click your <b>Users</b> folder.</p>
             <a href="#step3"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
@@ -269,7 +255,8 @@
           <h5 class="card-title">Step 3: Double Click on UserID who Installed SAS</h5>
           <img src="./img/sdwWalkthrough/step3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Click on the UserId of the User who installed SAS. In most cases, this will be your UserId. 
+                If you did not install SAS, please contact your Administrator or IT to continue.</p>
             <a href="#step4"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
@@ -281,7 +268,9 @@
           <h5 class="card-title">Step 4: Double Click on AppData</h5>
           <img src="./img/sdwWalkthrough/step4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Double Click on the <b>AppData</b> folder.</p>
+            <p class="card-text"><b>Note: </b>The AppData directory is a hidden folder. </p>
+            <p class="card-text">For assistance enabling the display of hidden files and folders in Windows, see <a href="https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files">Show hidden files.</a></p>
             <a href="#step5"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
@@ -293,7 +282,7 @@
           <h5 class="card-title">Step 5: Double Click on Local</h5>
           <img src="./img/sdwWalkthrough/step5.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Double click on the <b>Local</b> Folder.</p>
             <a href="#step6"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
@@ -305,7 +294,7 @@
           <h5 class="card-title">Step 6: Double click on SAS</h5>
           <img src="./img/sdwWalkthrough/step6.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Double click on the <b>SAS</b> Folder.</p>
             <a href="#step7"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
@@ -314,10 +303,16 @@
         <div id=step7> </div>
       <br>
       <div class="card">
-          <h5 class="card-title">Step 7: Right Click on SAS Deployment Wizard</h5>
+          <h5 class="card-title">Step 7: Create a SAS Deployment Wizard Zipped Folder</h5>
           <img src="./img/sdwWalkthrough/step7.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">To create a SAS Deployment Wizard Zipped Folder, please do the following: </p>
+              <ol>
+                <li>Right click on the <b>SAS Deployment Wizard</b> Folder.</li>
+                <li>Hover your mouse pointer over <b>Send to</b>as highlighted above.</li>
+                <li>Click on <b>Compressed (zipped) folder</b> Folder.</li>
+                <li>Give your Zipped Folder a name and save it to a location you will remember.</li>
+              </ol>
             <a href="#step8"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
@@ -329,7 +324,7 @@
           <h5 class="card-title">Step 8 - Verify the Zip File was Created</h5>
           <img src="./img/sdwWalkthrough/step8.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Verify that the Zipped File was created by looking at the <b>Type</b> of the file.</p>
             <a href="#step9"> <button type="button" class="btn btn-outline-light">Next</button> </a>
           </div>
       </div>
@@ -358,11 +353,17 @@
           <h5 class="card-title">Step 10 - Submit the Zipped File </h5>
           <div class="card-body">
               <div class="text-center">
-                <button type="submit" class="btn btn-lg btn-primary">Submit Logs</button>
+                  <h6 style="text-align: left;"> Please click the "Submit Logs" Button Below and do the following: </h6>
+                  <ol style="text-align: left;">
+                    <li>Your default email provider will open up. Verify the tracking number is correct in the Subject Field</li>
+                    <li>Please attatch your zipped folder you just created</li>
+                    <li>Press Send</li>
+                    <li>Your SAS Technical Support Engineer will reach out to you</li>
+                  </ol>
+                  <button type="submit" class="btn btn-lg btn-primary" id="submitLogs">Submit Logs</button>
               </div>
           </div>
       </div>
-
 
 </div> <!-- End of Bootstrap Container -->
 </section> <!-- End of Bootstrap Section -->
@@ -424,7 +425,7 @@
     </div>
   </footer>
 
-  <div class="copyright py-4 text-center text-white">
+  <div class="copyright py-4 text-center text-white" id="testDivId">
     <div class="container">
       <small>Copyright &copy; SAS Austin Development 2019</small>
     </div>
@@ -454,6 +455,9 @@
 
   <!-- Generate Guidance Script -->
   <script type="text/javascript" src="js/generateAssistance.js"></script>
+
+   <!-- Submit SDW Logs Script -->
+  <script type="text/javascript" src="js/submitLogs.js"></script>
 
 </body>
 

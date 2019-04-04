@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .guidedLogStep{
 	background-color: #2C3E50;
 	color: white;
@@ -88,6 +92,14 @@
 	color: white;
 }
 
+.generateAssistanceButton{
+  color: white;
+  text-decoration: none;
+}
+.generateAssistanceButton:hover{
+  color: white;
+  text-decoration: none;
+}
 
 /******* ADDING ARROW ANIMATION ********/
 .downArrow{

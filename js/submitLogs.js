@@ -1,6 +1,6 @@
-/**********************************************************/
-/******* Generate Log Assistance Button Java Script *******/
-/**********************************************************/
+/**********************************************/
+/******* Submit Logs Button Java Script *******/
+/**********************************************/
 
 /* This is the Button Javascript for the Generate Log Assistance Button */
 /* So far, I have been able to apply new elements to UL element with DOM Manipulation */
@@ -9,17 +9,20 @@
 
 
 /* Adding DOM Reference for ID's and Assigning them to Variables - These are all under the Collect Information for Log Assistance Section */
-var button = document.getElementById("generateLogAssistance");
+var button = document.getElementById("submitLogs");
+var input = document.getElementById("testId");
 var ul = document.getElementById("itemList");
 var email = document.getElementById("inputEmail");
 var trackingNumber = document.getElementById("inputTrackingNumber");
-var scrollStep = document.getElementById("testDivId");
 
 /* Setting the Header and Body Hidden when the Site loads*/
 document.getElementById("testsdwcheck").hidden = true;
 document.getElementById("logColectorAssistance").hidden = true;
 
 /* Length Function(s) - Finding the Length of an Input and Returning it */ /* Future Efficiency Increase- Implement this into an Array */
+function inputLength() {
+	return 1;
+}
 function inputLengthEmail() {
 	return email.value.length;
 }
@@ -35,28 +38,18 @@ function outputTrackingNumber() {
 	return trackingNumber.value;
 }
 
-/* Appears the SDW Steps when the "Generate Log Assistance" is Pressed if there is something in the Email && Tracking Number Field */
-function updatePage(){
-		if (inputLengthEmail() > 0 && inputLengthTrackingNumber() > 0 /*Tracking Numbers are 10 Digits*/) 
-		{	
-			/* Next Steps Appear */
-			document.getElementById("testsdwcheck").hidden = false;
-			document.getElementById("logColectorAssistance").hidden = false;
-			
+
+button.addEventListener("click", function() {
 			/* Hold the User's Email & Tracking Number */
 			var emailHold = outputEmail();
 			var trackingNumberHold = outputTrackingNumber();
 			console.log("User's Email: " + emailHold);
 			console.log("User's Tracking Number: " + trackingNumberHold);
-		}	  
-	else{
-		alert("Please enter a Valid Email and Tracking Number"); 
-	}
-}
 
-function multiFunction(){
-	updatePage();
-	// scrollIntoView();
-}
-
-button.addEventListener("click", multiFunction, true);
+			window.open('mailto:support@sas.com?subject='
+						+trackingNumberHold+
+						'&body=This email is in reference to Tracking Number: '+trackingNumberHold+
+						'. \nThis tracks owner is: '
+						+emailHold);
+			window.close();
+}, false);
