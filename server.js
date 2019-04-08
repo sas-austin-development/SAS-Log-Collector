@@ -1,11 +1,19 @@
+/********************************************************/
+/******************** Express Server ********************/
+/********************************************************/
+
+/*********** Requirements and Server Setup ***********/
 const express = require('express');
+const bodyParser = require('body-parser');
+const bcrypt = require('bcrypt-nodejs');
 const app = express();
 
-
+/*********** Setting the Port to Listen To ***********/
 app.listen(3000, function() {
   console.log('listening on 3000')
 })
 
+/*********** Using Static Files like CSS/JS to Display with Response ***********/
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
