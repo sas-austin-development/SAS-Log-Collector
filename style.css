@@ -32,6 +32,7 @@ html {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	transition: all .5s ease-in-out;
+  margin-top: 100px;
 }
 
 .generatedMessage:hover{
