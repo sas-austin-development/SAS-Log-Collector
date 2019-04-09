@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+#keyhide{
+position: absolute;
+z-index: ;
+}
+
+#dummyframe{
+position: absolute;
+ z-index: 1;
+}
+
 .guidedLogStep{
 	background-color: #2C3E50;
 	color: white;
@@ -165,5 +175,7 @@ html {
     transform: translateY(-15px);
   }
 }
+
+
 
 

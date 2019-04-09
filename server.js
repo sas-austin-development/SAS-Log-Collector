@@ -42,3 +42,10 @@ app.post('/informationRequest', (req, res) => {
     res.redirect('/')
   })
 })
+
+/* Ideas on how to implement */
+/* 
+1) Have JS hold their email (will be in console.log)
+2) When they submit the logs, have node check their mongodb email & tracking email with the one in JS
+3) If there is a match, go ahead and submit the logs with the correct information in the backend after grabbing the text files
+*/
