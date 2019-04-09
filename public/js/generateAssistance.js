@@ -18,6 +18,8 @@ var scrollStep = document.getElementById("testDivId");
 /* Setting the Header and Body Hidden when the Site loads*/
 document.getElementById("testsdwcheck").hidden = true;
 document.getElementById("logColectorAssistance").hidden = true;
+document.getElementById("dummyframe").hidden = true;
+
 
 /* Length Function(s) - Finding the Length of an Input and Returning it */ /* Future Efficiency Increase- Implement this into an Array */
 function inputLengthEmail() {
