@@ -34,13 +34,16 @@
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "bootstrap": "4.3.1",
+    "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "jquery": "3.3.1",
     "jquery.easing": "^1.4.1",
+    "knex": "^0.16.3",
     "magnific-popup": "^1.1.0",
     "mongodb": "^3.2.3",
-    "mongoose": "^5.5.0"
+    "mongoose": "^5.5.0",
+    "pg": "^6.1.0"
   },
   "devDependencies": {
     "browser-sync": "2.26.3",
