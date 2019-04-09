@@ -98,14 +98,15 @@
       <h2 class="text-center text-uppercase text-white">Guided Log Collection</h2>
       <hr class="star-light mb-5">
       
-      <form>
-      <!-- Step 1: Enter Email  -->
+      <form action="/informationRequest" method="POST">
+     <!--  PASTE HERE -->
+  <!-- Step 1: Enter Email  -->
          <div class='guidedLogStep'>
         <h4 class='text-center'> Step 1: Enter your Email</h4>
         <div class="form-group row">
           <label for="inputEmail3" class="col-sm-2 col-form-label"><strong>Email</strong></label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email" value="test@test.com">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
           </div>
         </div>
       </div>
@@ -116,7 +117,7 @@
         <div class="form-group row">
           <label for="inputPassword3" class="col-sm-2 col-form-label"><strong>Tracking Number</strong></label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Tracking Number" id="inputTrackingNumber" value="12345678">
+            <input type="text" class="form-control" placeholder="Tracking Number" id="inputTrackingNumber"  name="tracking-number">
           </div>
         </div>
       </div>
@@ -130,26 +131,26 @@
               <legend class="col-form-label col-sm-2 pt-0"><strong>Choose your OS</strong></legend>
               <div class="col-sm-10">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                  <label class="form-check-label" for="gridRadios1">
+                  <input class="form-check-input" type="radio" name="win32" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label">
                     Windows 32bit
                   </label>
                 </div>
                 <div class="form-check">
-                   <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                  <label class="form-check-label" for="gridRadios2">
+                   <input class="form-check-input" type="radio" name="win64" id="gridRadios2" value="option2">
+                  <label class="form-check-label">
                      Windows 64bit
                    </label>
                 </div>
                 <div class="form-check disabled">
-                   <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                   <label class="form-check-label" for="gridRadios3">
+                   <input class="form-check-input" type="radio" name="macOS" id="gridRadios3" value="option3" disabled>
+                   <label class="form-check-label">
                      MacOS
                    </label>
                 </div>
                 <div class="form-check disabled">
-                   <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                   <label class="form-check-label" for="gridRadios3">
+                   <input class="form-check-input" type="radio" name="unix" id="gridRadios3" value="option3" disabled>
+                   <label class="form-check-label">
                      UNIX
                    </label>
                 </div>
@@ -166,31 +167,31 @@
             <div class="col-sm-2"><strong>Requested Logs</strong></div>
             <div class="col-sm-10">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                <label class="form-check-label" for="gridCheck1">
+                <input class="form-check-input" type="checkbox" id="sdw" checked>
+                <label class="form-check-label">
                   SAS Deployment Wizard Logs
                 </label>
               </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1" disabled>
+                <input class="form-check-input" type="checkbox" id="seg" disabled>
                 <label class="form-check-label" for="gridCheck1">
                   SAS Enterprise Guide Logs
                 </label>
               </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1" disabled>
+                <input class="form-check-input" type="checkbox" id="metadata" disabled>
                 <label class="form-check-label" for="gridCheck1">
                   Metadata Logs
                 </label>
               </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1" disabled>
+                <input class="form-check-input" type="checkbox" id="workspace" disabled>
                 <label class="form-check-label" for="gridCheck1">
                   Workspace Server Logs
                 </label>
               </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck1" disabled>
+                <input class="form-check-input" type="checkbox" id="objspawn" disabled>
                 <label class="form-check-label" for="gridCheck1">
                   Object Spawner Logs
                 </label>
@@ -203,12 +204,15 @@
         <div class='guidedLogStep'>
           <h4 class='text-center'> Step 5: Please Submit </h4>
           <div class="text-center">
-               <button class="btn btn-lg btn-primary" id="generateLogAssistance" ><a href="#scrollId" class="generateAssistanceButton">Generate Log Assistance</a></button>
+               <button class="btn btn-lg btn-primary" id="generateLogAssistance" type="submit">
+                 <!--  <a href="#scrollId" class="generateAssistanceButton"> -->
+                      Generate Log Assistance
+                  <!-- </a> -->
+              </button>
           </div>
         </div>
      </form>
     <hr class="star-light mb-5" id = "scrollId">
-
 
 <!--  ------------------------------------------------ -->
 <!--  ----------- Log Collector Assistance  ---------- -->
