@@ -43,7 +43,7 @@
     "magnific-popup": "^1.1.0",
     "mongodb": "^3.2.3",
     "mongoose": "^5.5.0",
-    "pg": "^6.1.0"
+    "pg": "^7.9.0"
   },
   "devDependencies": {
     "browser-sync": "2.26.3",
